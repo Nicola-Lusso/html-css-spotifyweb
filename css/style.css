@@ -15,18 +15,41 @@ main{
   height: calc(100% - 80px);
 }
 
-.nav{
+.nav-left{
   width: 250px;
   height: 100vh;
-  background-color: lightgreen;
+  background-color: black;
 }
+
+.nav-left-top{
+  height: 80px;
+  background-color: black;
+}
+
+.nav-left-top img{
+  height: 70%;
+  margin: 10px 15px;
+
+}
+
+.nav-menu li a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+
+}
+
+.nav-menu li a img{
+  height: 30px;
+}
+
 
 .content{
   width: calc(100% - 250px);
   height: 100%;
   background-color: darkgrey;
   padding-top: 80px;
-
+  overflow-y: scroll;
 }
 
 .fix-bar{
