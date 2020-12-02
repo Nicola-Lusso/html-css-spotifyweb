@@ -50,7 +50,9 @@ main{
   background-color: darkgrey;
   padding-top: 80px;
   overflow-y: scroll;
+  text-align: right;
 }
+
 
 .fix-bar{
   width: calc(100% - 250px);
@@ -59,4 +61,14 @@ main{
   right: 0;
   top: 0;
   position: fixed;
+}
+
+.btn{
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 7px 12px;
+  color: white;
+  text-decoration: none;
+  line-height: 80px;
+  margin-right: 10px;
 }
