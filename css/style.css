@@ -54,6 +54,11 @@ main{
   margin-left: 20px;
 }
 
+
+.nav-menu .on {
+  border-left: 2px solid rgb(32, 204, 49);
+}
+
 .playlist h3{
   color: white;
   text-decoration: none;
@@ -80,6 +85,7 @@ main{
   text-decoration: none;
   margin-left: 20px;
 }
+
 
 .nav-left-footer{
  margin-top: calc(100% - 90px);
@@ -142,9 +148,35 @@ main{
 .btn{
   border: 1px solid white;
   border-radius: 20px;
-  padding: 7px 12px;
+  padding: 9px 15px;
   color: white;
   text-decoration: none;
   line-height: 80px;
   margin-right: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.suggeriti {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.suggeriti li {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+  padding: 16px 11px;
+}
+
+.suggeriti .on::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border: 1px solid rgb(32, 204, 49);
+  bottom: 12px;
+  left: 30%;
 }
