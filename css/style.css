@@ -257,12 +257,53 @@ main{
   width: 100%;
 }
 
+.create-for{
+  margin-top: 30px;
+}
 
+.create-for h2{
+  color: white;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 20px;
+}
 
+.create-for p{
+  color: lightgrey;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 5px;
+}
 
+.box h4 {
+  margin-top: 10px;
+  color: white;
+}
 
+/* SEZIONE ARTISTI */
 
+.artisti h2{
+  margin-top: 30px;
+  padding-top: 10px;
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+}
 
+.artisti p{
+  color: lightgrey;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.artisti {
+  margin-bottom: 30px;
+}
+
+.artisti .layover, .artisti img{
+  border-radius: 50%;
+}
 
 
 
