@@ -32,7 +32,7 @@
          <!-- /nav-menu -->
 
         <!-- Inizio sezione playlist -->
-        <section class="playlist">
+        <section class="playlist" id="display_block">
           <h3>Playlist</h3>
           <div class="crea-playlist">
             <ul>
@@ -40,7 +40,7 @@
               <li><a href="#">Crea Playlist</a></li
             </ul>
           </div>
-          <div class="menu-playlist">
+          <div class="menu-playlist" id="display_block">
             <ul>
               <li><a href="#">Playlist</a></li>
               <li><a href="#">Playlist</a></li>
@@ -66,7 +66,7 @@
           <div class="nav-left-footer-bottom">
             <ul>
               <li><a href="#"><img src="img/profile.svg" alt="profilo"></a></li>
-              <li><a href="#"><strong>Nicola Lusso</strong></a></li>
+              <li><a href="#"><span><strong>Nicola Lusso</strong></span></a></li>
             </ul>
           </div>
         </div>
@@ -217,15 +217,62 @@
         </section>
         <!-- /sezione Artisti-->
 
-      </section>
-
-
-
-
     </main>
-  </div>
-  <footer>
+    <!-- Fine Main -->
 
-  </footer>
+    <!-- Inizio Footer -->
+    <footer>
+      <!-- Inizio Sezione Song -->
+      <section class="song">
+        <img src="img/sinister.jpeg" alt="sinister">
+        <div>
+          <h4>Sinister</h4>
+          <p>Brano Nome</p>
+        </div>
+        <div class="mr_30_song">
+          <p><i class="far fa-heart"></i></p>
+          <p><i class="far fa-folder"></i></p>
+        </div>
+      </section>
+      <!-- /sezione Song -->
+
+      <!-- Inizio Sezione Comand -->
+      <section class="comand">
+        <div>
+          <div class="control">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo"></i>
+          </div>
+          <div class="player-bar">
+            <span>0:25</span>
+            <div class="bar">
+              <div class="bar-on"></div>
+            </div>
+            <span>4:35</span>
+          </div>
+        </div>
+      </section>
+      <!-- /sezione player -->
+
+      <!-- Inizio sezione settings -->
+      <section class="settings">
+        <i class="fas fa-list-ul"></i>
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-volume-up"></i>
+        <div class="bar">
+          <div class="bar-on"></div>
+        </div>
+      </section>
+      <!-- /sezione settings -->
+
+    </footer>
+    <!-- /Footer -->
+
+  </div>
+  <!-- Fine Container -->
+
 </body>
 </html>
