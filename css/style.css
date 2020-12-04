@@ -15,16 +15,18 @@ li a{
   width: 100%;
   height: 100vh;
   background-color: lightblue;
+  overflow: hidden;
 }
 
 main{
   display: flex;
   height: calc(100% - 80px);
+  overflow: hidden;
 }
 
 .nav-left{
   width: 250px;
-  height: 100vh;
+  height: 100%;
   background-color: black;
 
 }
@@ -79,16 +81,23 @@ main{
   margin-left: 20px;
 }
 
+.menu-playlist {
+  min-height: 200px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
 .menu-playlist li a{
   font-size: 17px;
   line-height: 35px;
   text-decoration: none;
   margin-left: 20px;
+
 }
 
 
 .nav-left-footer{
- margin-top: calc(100% - 90px);
+ margin-top: calc(100% - 100px);
 }
 
 .nav-left-footer hr{
@@ -129,7 +138,7 @@ main{
 .content{
   width: calc(100% - 250px);
   height: 100%;
-  background-color: darkgrey;
+  background-color: black;
   padding-top: 80px;
   overflow-y: scroll;
   text-align: right;
@@ -179,4 +188,128 @@ main{
   border: 1px solid rgb(32, 204, 49);
   bottom: 12px;
   left: 30%;
+}
+
+.recently-played{
+  margin-top: 20px;
+}
+
+.recently-played h1{
+  text-align: left;
+  margin-left: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.playlist-container {
+  margin-top: 30px;
+  display: flex;
+}
+
+.playlist-container .box{
+  width: calc(100% / 6 - 40px);
+  text-align: center;
+  margin-right: 30px;
+}
+
+.playlist-container .box:first-child{
+  margin-left: 20px;
+}
+
+.img {
+  position: relative;
+  font-size: 0;
+}
+
+.box h2{
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.box p{
+  color: lightgrey;
+}
+
+.playlist-container .layover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.playlist-container .layover:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.playlist-container .layover:hover i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 45px;
+}
+
+.playlist-container img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA-QUERY */
+@media screen and (min-width: 580px) {
+
+  .nav-left .nav-left-top .logo-small{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 579px) {
+
+  .nav-left {
+    width: 60px;
+  }
+
+  .nav-left-top .logo{
+    display: none;
+  }
+
+  .nav-menu .menu ul li a span{
+    display: none;
+  }
+
+  .playlist{
+    display: none;
+  }
+
+  .menu-playlist {
+    display: none;
+  }
+
+  .nav-left-footer span{
+    display: none;
+  }
+
+  .nav-left-footer-top::after {
+    display: none;
+  }
+
+  .nav-left-footer-top img {
+    padding-bottom: 12px;
+    width: 17px;
+    margin: 0 5px;
+  }
+
 }
