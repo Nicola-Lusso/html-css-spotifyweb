@@ -75,6 +75,7 @@ main{
 .nav-menu li a img{
   height: 30px;
   margin-left: 20px;
+  padding-top: 5px;
 }
 
 
@@ -166,7 +167,7 @@ main{
 .content{
   width: calc(100% - 250px);
   height: 100%;
-  background-color: black;
+  background-color: rgb(30, 30, 38);
   padding-top: 80px;
   overflow-y: scroll;
   text-align: right;
@@ -501,15 +502,17 @@ footer {
     display: none;
   }
 
-  .nav-left-top .menu ul li a span{
+  .nav-menu .menu span{
     display: none;
   }
 
-  .nav-left-top .playlist{
+  .menu-playlist a{
     display: none;
   }
 
-  .menu-palylist {
+  .playlist h3,
+  .playlist i,
+  .playlist span{
     display: none;
   }
 
@@ -524,8 +527,9 @@ footer {
   .nav-left-footer-top img {
     width: 20px;
     padding-bottom: 10px;
-    margin: 0 5px;
+    margin: 0 20px;
   }
+
 
   .content {
     width: calc(100% - 60px);
