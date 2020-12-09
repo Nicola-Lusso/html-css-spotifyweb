@@ -10,7 +10,10 @@ li a{
   text-decoration: none;
   list-style: none;
 }
-
+ul {
+  list-style: none;
+  text-decoration: none;
+}
 #display_block{
   display: block;
 }
@@ -301,6 +304,11 @@ main{
   color: white;
 }
 
+.box .create p{
+  color: lightgrey;
+  text-align: left;
+}
+
 .box .create .image img {
   width: 150px;
   height: 150px;
@@ -475,6 +483,7 @@ footer {
 .settings {
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 
 .settings i {
@@ -484,6 +493,7 @@ footer {
 
 .settings .bar {
   width: 100px;
+
 }
 
 
@@ -496,7 +506,7 @@ footer {
 
 @media screen and (max-width: 578px) {
   .nav-left {
-    width: 60px;
+    width: 45px;
   }
   .nav-left-top .logo{
     display: none;
